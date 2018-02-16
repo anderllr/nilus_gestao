@@ -1,0 +1,209 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{583d6a00-e5d3-4d91-acb6-ca23c0e3e210}</ProjectGuid>
+			<MainSource>Patrimonial.dpr</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>d:\Sistemas\Nilus\Patrimonial.exe</DCC_DependencyCheckOutputName>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DependencyCheckOutputName>Patrimonial.exe</DCC_DependencyCheckOutputName>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_DependencyCheckOutputName>M:\Patrimonial.exe</DCC_DependencyCheckOutputName>
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_ExeOutput>M:\</DCC_ExeOutput>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_DependencyCheckOutputName>d:\Sistemas\Nilus\Patrimonial.exe</DCC_DependencyCheckOutputName>
+			<Version>7.0</Version>
+			<DCC_ExeOutput>d:\Sistemas\Nilus</DCC_ExeOutput>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+						<Parameters Name="RunParams">Nilus G3sta0 1 1 1 1</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">29</VersionInfo>
+						<VersionInfo Name="Debug">True</VersionInfo>
+						<VersionInfo Name="PreRelease">True</VersionInfo>
+						<VersionInfo Name="Special">True</VersionInfo>
+						<VersionInfo Name="Private">True</VersionInfo>
+						<VersionInfo Name="DLL">True</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Nilus Soluções para o Agronegócio Ltda</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Módulo Patrimonial</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.29</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">Nilus Gestão do Agronegócio</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+						<VersionInfoKeys Name="SpecialBuild"/>
+						<VersionInfoKeys Name="PrivateBuild"/>
+					</VersionInfoKeys>
+					<Source>
+						<Source Name="MainSource">Patrimonial.dpr</Source>
+					</Source>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup>
+			<DelphiCompile Include="Patrimonial.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="uFrmPrincipal.pas">
+				<Form>frmPrincipal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadrao.pas">
+				<Form>FrmPadrao</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadrao.pas">
+				<Form>FrmCadPadrao</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadraoEmpCont.pas">
+				<Form>FrmCadPadraoEmpCont</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadraoEmpFiscal.pas">
+				<Form>FrmCadPadraoEmpFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoPesquisa.pas">
+				<Form>FrmPadraoPesquisa</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoPesqEmpFiscal.pas">
+				<Form>FrmPadraoPesqEmpFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoRel.pas">
+				<Form>FrmPadraoRel</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoRelEmpresa.pas">
+				<Form>FrmPadraoRelEmpresa</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmSobre.pas">
+				<Form>FrmSobre</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFuncao.pas"/>
+			<DCCReference Include="..\padrao\uRecError.pas">
+				<Form>ReconcileErrorForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uDmPadrao.pas">
+				<Form>dmPadrao</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesCadFiscal.pas">
+				<Form>FrmPesCadFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadraoGrid.pas">
+				<Form>FrmCadPadraoGrid</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uFrmCadUsuario.pas">
+				<Form>frmCadUsuario</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesClienteFiscal.pas">
+				<Form>FrmPesClienteFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesCnpj.pas">
+				<Form>FrmPesCnpj</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uCadCidade.pas">
+				<Form>frmCadCidade</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesEmpFiscal.pas">
+				<Form>FrmPesEmpFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\Financas\uCadDocSerie.pas">
+				<Form>frmCadDocSerie</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uCadGeral.pas">
+				<Form>frmCadGeral</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadBemSubGrupo.pas">
+				<Form>FrmCadBemSubGrupo</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadMaquina.pas">
+				<Form>FrmCadMaquina</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadBem.pas">
+				<Form>FrmCadBem</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPadraoPesqEmpContabil.pas">
+				<Form>FrmPadraoPesqEmpContabil</Form>
+			</DCCReference>
+			<DCCReference Include="..\Financas\uFrmPesContaCliente.pas">
+				<Form>FrmPesContaCliente</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesEmpContabil.pas">
+				<Form>FrmPesEmpContabil</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmBackup.pas">
+				<Form>frmBackup</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmSelEmpresas.pas">
+				<Form>FrmSelEmpresas</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uDmFind.pas">
+				<Form>dmFind</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="uFrmCadMaquinaMarca.pas">
+				<Form>FrmCadMaquinaMarca</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadBemGrupo.pas">
+				<Form>FrmCadBemGrupo</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadTipoMaquina.pas">
+				<Form>FrmCadTipoMaquina</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	</Project>

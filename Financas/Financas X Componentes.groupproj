@@ -1,0 +1,50 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{9a1231f4-190e-49c8-875a-90f79eab1251}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Financas.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\..\Comp2009\Comps\Componentes.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<BorlandProject>
+					<Default.Personality/>
+				</BorlandProject>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Financas">
+			<MSBuild Projects="Financas.dproj"/>
+		</Target>
+		<Target Name="Financas:Clean">
+			<MSBuild Targets="Clean" Projects="Financas.dproj"/>
+		</Target>
+		<Target Name="Financas:Make">
+			<MSBuild Targets="Make" Projects="Financas.dproj"/>
+		</Target>
+		<Target Name="Componentes">
+			<MSBuild Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Componentes:Clean">
+			<MSBuild Targets="Clean" Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Componentes:Make">
+			<MSBuild Targets="Make" Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Financas;Componentes"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Financas:Clean;Componentes:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Financas:Make;Componentes:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

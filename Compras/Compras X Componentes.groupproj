@@ -1,0 +1,50 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{9513118e-c944-43f3-ba86-bd2da563d7bf}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Compras.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\..\Comp2009\Comps\Componentes.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<BorlandProject>
+					<Default.Personality/>
+				</BorlandProject>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Compras">
+			<MSBuild Projects="Compras.dproj"/>
+		</Target>
+		<Target Name="Compras:Clean">
+			<MSBuild Targets="Clean" Projects="Compras.dproj"/>
+		</Target>
+		<Target Name="Compras:Make">
+			<MSBuild Targets="Make" Projects="Compras.dproj"/>
+		</Target>
+		<Target Name="Componentes">
+			<MSBuild Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Componentes:Clean">
+			<MSBuild Targets="Clean" Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Componentes:Make">
+			<MSBuild Targets="Make" Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Compras;Componentes"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Compras:Clean;Componentes:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Compras:Make;Componentes:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

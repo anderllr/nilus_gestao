@@ -1,0 +1,50 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{e22c1a1f-8718-4789-8654-b38307d03bcb}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Contabil.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\..\Comp2009\Comps\Componentes.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<BorlandProject>
+					<Default.Personality/>
+				</BorlandProject>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Contabil">
+			<MSBuild Projects="Contabil.dproj"/>
+		</Target>
+		<Target Name="Contabil:Clean">
+			<MSBuild Targets="Clean" Projects="Contabil.dproj"/>
+		</Target>
+		<Target Name="Contabil:Make">
+			<MSBuild Targets="Make" Projects="Contabil.dproj"/>
+		</Target>
+		<Target Name="Componentes">
+			<MSBuild Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Componentes:Clean">
+			<MSBuild Targets="Clean" Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Componentes:Make">
+			<MSBuild Targets="Make" Projects="..\..\Comp2009\Comps\Componentes.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Contabil;Componentes"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Contabil:Clean;Componentes:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Contabil:Make;Componentes:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

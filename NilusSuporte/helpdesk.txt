@@ -1,0 +1,69 @@
+[TITLE]
+Suporte NILUS SOLUÇÕES PARA O AGRONEGÓCIO
+
+[HOST]
+DESENV-Anderson
+-connect nilus-anderson.no-ip.biz:5500 -noregistry
+
+[HOST]
+DESENV-Marcos
+-connect nilus-marcos.no-ip.biz:5501 -noregistry
+
+[HOST]
+SUPORTE-Nilo
+-connect nilus-nilo.no-ip.biz:5502 -noregistry
+
+[TEXTTOP]
+Duplo clique no host para chamar o suporte.
+
+[TEXTMIDDLE]
+Antes de iniciar a conexão
+
+[TEXTBOTTOM]
+favor ligar ou avisar por msn
+
+[TEXTRBOTTOM]
+
+
+[TEXTRMIDDLE]
+Soluções para o Agronegócio
+
+[TEXTRTOP]
+NILUS
+
+[TEXTBUTTON]
+Informações
+
+[WEBPAGE]
+http://www.nilus.com.br
+
+[TEXTCLOSEBUTTON]
+Fechar
+
+
+[BALLOON1TITLE]
+Estabelecendo conexão ...
+
+[BALLOON1A]
+Tempo para tentativas: 5 min.
+
+[BALLOON1B]
+If it fails, the software will remove himself
+
+[BALLOON1C]
+from your system. 
+
+[BALLOON2TITLE]
+Conexão ativa.
+
+[BALLOON2A]
+Warning, your desktop is remote visable
+
+[BALLOON2B]
+You can break the connection any time
+
+[BALLOON2C]
+by using the close button
+
+[WEBPAGE]
+http://www.nilus.com.br

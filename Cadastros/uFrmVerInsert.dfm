@@ -1,0 +1,157 @@
+object FrmVerInsert: TFrmVerInsert
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Insert do Menu para atualizar'
+  ClientHeight = 438
+  ClientWidth = 591
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MemInsert: TCMemo
+    Left = 0
+    Top = 33
+    Width = 591
+    Height = 113
+    Align = alTop
+    BevelKind = bkTile
+    BorderStyle = bsNone
+    TabOrder = 0
+    ExplicitLeft = -8
+    ExplicitTop = 7
+  end
+  object PanBotoes: TCPanelGradient
+    Left = 0
+    Top = 0
+    Width = 591
+    Height = 33
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'PanBotoes'
+    TabOrder = 1
+    CaptionNo = 0
+    HintNo = 0
+    BackgroundGradientColor = 13099746
+    BackgroundGradientDirection = gdVertical
+    TextColor = clBlack
+    GradientColor = clBlack
+    RegularButtonColor = clBlack
+    SelectedButtonColor = clBlack
+    ButtonOptions = []
+    ExplicitTop = 35
+    ExplicitWidth = 534
+    object CLabel1: TCLabel
+      Left = 18
+      Top = 8
+      Width = 200
+      Height = 16
+      Caption = 'Insert do Registro Selecionado'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object CPanelGradient1: TCPanelGradient
+    Left = 0
+    Top = 146
+    Width = 591
+    Height = 33
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'PanBotoes'
+    TabOrder = 2
+    CaptionNo = 0
+    HintNo = 0
+    BackgroundGradientColor = 13099746
+    BackgroundGradientDirection = gdVertical
+    TextColor = clBlack
+    GradientColor = clBlack
+    RegularButtonColor = clBlack
+    SelectedButtonColor = clBlack
+    ButtonOptions = []
+    ExplicitLeft = -8
+    ExplicitTop = 113
+    object CLabel2: TCLabel
+      Left = 18
+      Top = 8
+      Width = 206
+      Height = 16
+      Caption = 'Update do Registro Selecionado'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object MemUpdate: TCMemo
+    Left = 0
+    Top = 179
+    Width = 591
+    Height = 113
+    Align = alTop
+    BevelKind = bkTile
+    BorderStyle = bsNone
+    TabOrder = 3
+    ExplicitLeft = 18
+    ExplicitTop = 235
+  end
+  object MemDelete: TCMemo
+    Left = 0
+    Top = 325
+    Width = 591
+    Height = 113
+    Align = alClient
+    BevelKind = bkTile
+    BorderStyle = bsNone
+    TabOrder = 4
+    ExplicitLeft = 8
+    ExplicitTop = 322
+  end
+  object CPanelGradient2: TCPanelGradient
+    Left = 0
+    Top = 292
+    Width = 591
+    Height = 33
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'PanBotoes'
+    TabOrder = 5
+    CaptionNo = 0
+    HintNo = 0
+    BackgroundGradientColor = 13099746
+    BackgroundGradientDirection = gdVertical
+    TextColor = clBlack
+    GradientColor = clBlack
+    RegularButtonColor = clBlack
+    SelectedButtonColor = clBlack
+    ButtonOptions = []
+    ExplicitLeft = 8
+    ExplicitTop = 267
+    object CLabel3: TCLabel
+      Left = 18
+      Top = 8
+      Width = 202
+      Height = 16
+      Caption = 'Delete do Registro Selecionado'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+end

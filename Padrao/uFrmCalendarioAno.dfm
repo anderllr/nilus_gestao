@@ -1,0 +1,65 @@
+object FrmCalendarioAno: TFrmCalendarioAno
+  Left = 0
+  Top = 0
+  BorderIcons = [biMinimize, biMaximize]
+  Caption = 'Selecione o Ano e o M'#234's'
+  ClientHeight = 240
+  ClientWidth = 300
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Ano: TRzSpinner
+    Left = 0
+    Top = 0
+    Width = 300
+    Height = 40
+    ButtonWidth = 40
+    Max = 2100
+    Min = 2000
+    Value = 2011
+    Align = alTop
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    ExplicitLeft = 64
+    ExplicitTop = 96
+    ExplicitWidth = 85
+  end
+  object Mes: TRzStringGrid
+    Left = 0
+    Top = 40
+    Width = 300
+    Height = 200
+    Align = alClient
+    ColCount = 3
+    DefaultColWidth = 98
+    DefaultRowHeight = 48
+    FixedCols = 0
+    RowCount = 4
+    FixedRows = 0
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGray
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ScrollBars = ssNone
+    TabOrder = 1
+    OnDrawCell = MesDrawCell
+    ExplicitTop = 39
+  end
+end

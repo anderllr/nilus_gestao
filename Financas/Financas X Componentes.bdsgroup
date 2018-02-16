@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{4BB9CAA8-E2C9-4529-9853-F949ECDD3641}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="Financas.exe">Financas.bdsproj</Projects>
+      <Projects Name="Componentes.bpl">..\..\componente\Componentes.bdsproj</Projects>
+      <Projects Name="Targets">Financas.exe Componentes.bpl</Projects>
+    </Projects>
+    <Dependencies>
+      <Dependency GUID="{66E97FD4-4DE6-434C-9762-AF55650097A3}">
+        <Dependency GUID="{740FAA65-6313-4949-8796-E7F5C30469A4}"/>
+      </Dependency>
+    </Dependencies>
+  </Default.Personality>
+	<StarTeamAssociation></StarTeamAssociation>
+	<StarTeamNonRelativeFiles></StarTeamNonRelativeFiles>
+</BorlandProject>

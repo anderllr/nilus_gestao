@@ -1,0 +1,372 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{ac2ba4fe-394e-473d-bed7-605a332c2235}</ProjectGuid>
+			<MainSource>Financas.dpr</MainSource>
+			<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+			<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<DCC_DependencyCheckOutputName>d:\Sistemas\Nilus\Financas.exe</DCC_DependencyCheckOutputName>
+			<ProjectVersion>12.0</ProjectVersion>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_DependencyCheckOutputName>Financas.exe</DCC_DependencyCheckOutputName>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_DependencyCheckOutputName>\\vitaserver\Nilus\Financas.exe</DCC_DependencyCheckOutputName>
+			<Version>7.0</Version>
+			<DCC_DebugInformation>False</DCC_DebugInformation>
+			<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_ExeOutput>\\vitaserver\Nilus</DCC_ExeOutput>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_DependencyCheckOutputName>d:\Sistemas\Nilus\Financas.exe</DCC_DependencyCheckOutputName>
+			<Version>7.0</Version>
+			<DCC_ExeOutput>d:\Sistemas\Nilus</DCC_ExeOutput>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_MapFile>3</DCC_MapFile>
+		</PropertyGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+						<Parameters Name="RunParams">Nilus G3sta0 1 1 1 1</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">399</VersionInfo>
+						<VersionInfo Name="Debug">True</VersionInfo>
+						<VersionInfo Name="PreRelease">True</VersionInfo>
+						<VersionInfo Name="Special">True</VersionInfo>
+						<VersionInfo Name="Private">True</VersionInfo>
+						<VersionInfo Name="DLL">True</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Nilus Soluções para o Agronegócio Ltda</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription">Módulo de Finanças</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.399</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright">Copyright Nilus Soluções para o Agronegócio Ltda.</VersionInfoKeys>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName">Nilus Gestão do Agronegócio</VersionInfoKeys>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+						<VersionInfoKeys Name="PrivateBuild"/>
+						<VersionInfoKeys Name="SpecialBuild"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="D:\Desenv\componente\FastReports4\LibD11\dclfrxdbx11.bpl">FastReport 4.0 DBX Components</Excluded_Packages>
+					</Excluded_Packages>
+					<Source>
+						<Source Name="MainSource">Financas.dpr</Source>
+					</Source>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup>
+			<DelphiCompile Include="Financas.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\padrao\uFrmPadrao.pas">
+				<Form>FrmPadrao</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadrao.pas">
+				<Form>FrmCadPadrao</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadraoEmpCont.pas">
+				<Form>FrmCadPadraoEmpCont</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadraoGrid.pas">
+				<Form>FrmCadPadraoGrid</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFuncao.pas"/>
+			<DCCReference Include="..\padrao\uFrmPadraoRel.pas">
+				<Form>FrmPadraoRel</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uDmPadrao.pas">
+				<Form>dmPadrao</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="uFrmCadConta.pas">
+				<Form>frmCadConta</Form>
+			</DCCReference>
+			<DCCReference Include="uCadMovFinanceira.pas">
+				<Form>frmCadMovFinanceira</Form>
+			</DCCReference>
+			<DCCReference Include="uCadPrevisaoPag.pas">
+				<Form>FrmCadPrevisaoPag</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPrincipal.pas">
+				<Form>frmPrincipal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmCadPadraoEmpFiscal.pas">
+				<Form>FrmCadPadraoEmpFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoPesquisa.pas">
+				<Form>FrmPadraoPesquisa</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesEmpContabil.pas">
+				<Form>FrmPesEmpContabil</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesEmpFiscal.pas">
+				<Form>FrmPesEmpFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoPesqEmpContabil.pas">
+				<Form>FrmPadraoPesqEmpContabil</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmPadraoPesqEmpFiscal.pas">
+				<Form>FrmPadraoPesqEmpFiscal</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesPrevisaoPag.pas">
+				<Form>FrmPesPrevisaoPag</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uCadGeral.pas">
+				<Form>frmCadGeral</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uCadCidade.pas">
+				<Form>frmCadCidade</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uRecError.pas">
+				<Form>ReconcileErrorForm</Form>
+			</DCCReference>
+			<DCCReference Include="uCadDocSerie.pas">
+				<Form>frmCadDocSerie</Form>
+			</DCCReference>
+			<DCCReference Include="..\Produtos\uFrmCadProduto.pas">
+				<Form>FrmCadProduto</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uFrmCadSafra.pas">
+				<Form>FrmCadSafra</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadCaixa.pas">
+				<Form>FrmCadCaixa</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadRateio.pas">
+				<Form>FrmCadRateio</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadRateioTalhao.pas">
+				<Form>FrmCadRateioTalhao</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadConfigFinanc.pas">
+				<Form>FrmCadConfigFinanc</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmAlteraPortador.pas">
+				<Form>FrmAlteraPortador</Form>
+			</DCCReference>
+			<DCCReference Include="uCadTituloPag.pas">
+				<Form>FrmCadTituloPag</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadMovConta.pas">
+				<Form>FrmCadMovConta</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesTitulos.pas">
+				<Form>FrmPesTitulos</Form>
+			</DCCReference>
+			<DCCReference Include="uCadPrevisaoRec.pas">
+				<Form>FrmCadPrevisaoRec</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesPrevisaoRec.pas">
+				<Form>FrmPesPrevisaoRec</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesTituloRec.pas">
+				<Form>FrmPesTituloRec</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadMovTransf.pas">
+				<Form>FrmCadMovTransf</Form>
+			</DCCReference>
+			<DCCReference Include="uCadTituloRec.pas">
+				<Form>FrmCadTituloRec</Form>
+			</DCCReference>
+			<DCCReference Include="uCadBanco.pas">
+				<Form>frmCadBanco</Form>
+			</DCCReference>
+			<DCCReference Include="uCadIndice.pas">
+				<Form>frmCadIndice</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadMovCaixa.pas">
+				<Form>FrmCadMovCaixa</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPagTitulo.pas">
+				<Form>FrmPagTitulo</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesCnpj.pas">
+				<Form>FrmPesCnpj</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uFrmCadUsuario.pas">
+				<Form>frmCadUsuario</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRecTitulo.pas">
+				<Form>FrmRecTitulo</Form>
+			</DCCReference>
+			<DCCReference Include="..\Patrimonial\uFrmCadBem.pas">
+				<Form>FrmCadBem</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesTituloPag.pas">
+				<Form>FrmPesTituloPag</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelMovCaixa.pas">
+				<Form>FrmRelMovCaixa</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelExtratoConta.pas">
+				<Form>FrmRelExtratoConta</Form>
+			</DCCReference>
+			<DCCReference Include="uCadResultado.pas">
+				<Form>FrmCadResultado</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadChequeAvulso.pas">
+				<Form>FrmCadChequeAvulso</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelGerencial.pas">
+				<Form>FrmRelGerencial</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelResultado.pas">
+				<Form>frmRelResultado</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelRateio.pas">
+				<Form>frmRelRateio</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelFichaGerencial.pas">
+				<Form>FrmRelFichaGerencial</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadGerencial.pas">
+				<Form>FrmCadGerencial</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelConfResultados.pas">
+				<Form>FrmRelConfResultado</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelFluxoCaixa.pas">
+				<Form>FrmRelFluxoCaixa</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmAlteraPag.pas">
+				<Form>frmAlteraPag</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmAlteraRec.pas">
+				<Form>frmAlteraRec</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelMovimentacao.pas">
+				<Form>FrmRelMovimentacao</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmSobre.pas">
+				<Form>FrmSobre</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelContasReceber.pas">
+				<Form>FrmRelContasReceber</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelExtratoCaixa.pas">
+				<Form>FrmRelExtratoCaixa</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPadraoPesquisaDevExpress.pas">
+				<Form>FrmPadraoPesquisaDevExpress</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesGerencial.pas">
+				<Form>FrmPesGerencial</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesMovTransf.pas">
+				<Form>FrmPesqMovTransf</Form>
+			</DCCReference>
+			<DCCReference Include="..\padrao\uFrmBackup.pas">
+				<Form>frmBackup</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelFluxoCaixaMensal.pas">
+				<Form>FrmRelFluxoCaixaMensal</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelExtratoFornecedor.pas">
+				<Form>FrmRelExtratoFornecedor</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelExtratoCliente.pas">
+				<Form>FrmRelExtratoCliente</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadTalhao.pas">
+				<Form>FrmCadTalhao</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesContaCliente.pas">
+				<Form>FrmPesContaCliente</Form>
+			</DCCReference>
+			<DCCReference Include="..\Contabil\uFrmCadPlanoConta.pas">
+				<Form>frmCadPlanoConta</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmSelEmpresas.pas">
+				<Form>FrmSelEmpresas</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uDmFind.pas">
+				<Form>dmFind</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPadraoRelEmpresa.pas">
+				<Form>FrmPadraoRelEmpresa</Form>
+			</DCCReference>
+			<DCCReference Include="..\Armazem\uFrmCadCultura.pas">
+				<Form>FrmCadCultura</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmCadGrupoGerencial.pas">
+				<Form>FrmCadGrupoGerencial</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uFrmCadSegmento.pas">
+				<Form>FrmCadSegmento</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmPesCompensacao.pas">
+				<Form>FrmPesCompensacao</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelContasPagar.pas">
+				<Form>FrmRelContasPagar</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelContasPagarPortador.pas">
+				<Form>FrmRelContasPagarPortador</Form>
+			</DCCReference>
+			<DCCReference Include="uFrmRelExtratoBancario.pas">
+				<Form>FrmRelExtratoBancario</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmPesProduto.pas">
+				<Form>FrmPesProduto</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmAutorizacao.pas">
+				<Form>FrmAutorizacao</Form>
+			</DCCReference>
+			<DCCReference Include="..\Padrao\uFrmProcessa.pas">
+				<Form>FrmProcessa</Form>
+			</DCCReference>
+			<DCCReference Include="..\Cadastros\uFrmCadGrupoCad.pas">
+				<Form>FrmCadGrupoCad</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	</Project>

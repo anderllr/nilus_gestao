@@ -1,0 +1,40 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3a22bcd9-0b6e-4b47-a4ee-8284a2c6378d}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Armazem">
+    <MSBuild Projects="Armazem.dproj" Targets="" />
+  </Target>
+  <Target Name="Armazem:Clean">
+    <MSBuild Projects="Armazem.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Armazem:Make">
+    <MSBuild Projects="Armazem.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Componentes">
+    <MSBuild Projects="..\..\componente\Componentes.dproj" Targets="" />
+  </Target>
+  <Target Name="Componentes:Clean">
+    <MSBuild Projects="..\..\componente\Componentes.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Componentes:Make">
+    <MSBuild Projects="..\..\componente\Componentes.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Armazem;Componentes" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Armazem:Clean;Componentes:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Armazem:Make;Componentes:Make" />
+  </Target>
+</Project>

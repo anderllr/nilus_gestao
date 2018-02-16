@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{24C6B4BF-BED4-490A-A1E6-16119D64C8DC}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="Cadastros.exe">Cadastros.bdsproj</Projects>
+      <Projects Name="Componentes.bpl">..\..\componente\Componentes.bdsproj</Projects>
+      <Projects Name="Targets">Cadastros.exe Componentes.bpl</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>
